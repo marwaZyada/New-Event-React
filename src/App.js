@@ -1,9 +1,10 @@
 
-// import Overview from "./design-system/components/Overview";
-
+import OurProgramSection from './design-system/components/OurProgrmSection/OurProgramSection';
+import './design-system/main.css'
 
 import FifthSection from "./design-system/components/FifthSection";
 import ThirdSection from "./design-system/components/ThirdSection";
+import OurSponserSection from './design-system/components/OurSponserSection';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     <ThirdSection/>
 
    <FifthSection/>
+   <OurProgramSection/>
+   <OurSponserSection/>
 
     </div>
   );

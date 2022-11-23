@@ -4,7 +4,7 @@ import CreativeSpeakers from '../CreativeSpeakers';
 import SpeakersData from '../CreativeSpeakers/SpeakersData';
 const FifthSection = () => {
     return (
-        <div className='row py-5'>
+        <div className='row py-5 ' style={{backgroundColor:'#e6e6e6'}}>
           {SpeakersData.map(el=>(
             <CreativeSpeakers key={el.id} img={el.img} name={el.name} job={el.job} alt={el.alt}/>
           ))}  
