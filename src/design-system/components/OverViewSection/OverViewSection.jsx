@@ -2,7 +2,7 @@ import React from 'react'
 import data from '../data'
 import Overview from '../Overview'
 
-export default function ThirdSection() {
+export default function OverViewSection() {
    
   return (
     <div className='third-section bg-dark text-light text-center py-5'>

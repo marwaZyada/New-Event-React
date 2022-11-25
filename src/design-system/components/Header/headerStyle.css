@@ -1,0 +1,14 @@
+.header{
+    height:110vh;
+    background-image: url(../../../assets/header/intro-bg.jpg);
+    background-size:cover;
+    width: 100%;
+
+}
+.btn{
+    border-radius: 0!important;
+}
+a{
+    margin-left: 10px;
+    font-size: 10px;
+}

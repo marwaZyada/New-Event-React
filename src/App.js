@@ -1,21 +1,14 @@
-
-import OurProgramSection from './design-system/components/OurProgrmSection/OurProgramSection';
-import './design-system/main.css'
-
-import FifthSection from "./design-system/components/FifthSection";
-import ThirdSection from "./design-system/components/ThirdSection";
-import OurSponserSection from './design-system/components/OurSponserSection';
+import Home from './pages/Home'
+import NavBar from "./design-system/components/navbar/NavBar";
+import Header from "./design-system/components/Header";
 
 
 function App() {
   return (
     <div className="App">
-    <ThirdSection/>
-
-   <FifthSection/>
-   <OurProgramSection/>
-   <OurSponserSection/>
-
+      <NavBar/>
+      <Header/>
+  <Home/>
     </div>
   );
 }
