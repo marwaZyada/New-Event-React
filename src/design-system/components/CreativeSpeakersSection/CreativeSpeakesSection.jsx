@@ -1,13 +1,12 @@
 import React from "react";
 import CreativeSpeakers from "../CreativeSpeakers";
 import SpeakersData from "../CreativeSpeakers/SpeakersData";
-// import SwiperCore,{Pagination,Navigation} from 'swiper/core'
+import {Autoplay,Pagination,Navigation} from 'swiper'
 
 import {Swiper,SwiperSlide} from 'swiper/react'
 
 import 'swiper/swiper.min.css'
 
-// SwiperCore.use([Pagination,Navigation])
 
 const CreativeSpeakersSection = () => {
   return (
@@ -25,13 +24,13 @@ const CreativeSpeakersSection = () => {
         </p>
       </div>
       <div className="container">
-        <div className="row text-dark text-center">
-         <Swiper slidesPerView={4} spaceBetween={50} >
-          <SwiperSlide>slide1</SwiperSlide>
-          <SwiperSlide>slide1</SwiperSlide>
-          <SwiperSlide>slide1</SwiperSlide>
-          <SwiperSlide>slide1</SwiperSlide>
-        {/* {SpeakersData.map((el) => (
+        <div className="text-dark text-center">
+         <Swiper slidesPerView={4} spaceBetween={50} navigation={true} pagination={{ type: "fraction"}} autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }} modules={[Autoplay,Navigation, Pagination]}>
+           
+        {SpeakersData.map((el) => (
               < SwiperSlide  key={el.id}>
                
                 <CreativeSpeakers
@@ -42,7 +41,7 @@ const CreativeSpeakersSection = () => {
                   alt={el.alt}
                 />
               </SwiperSlide >
-            ))} */}
+            ))}
          </Swiper> 
        
         </div>
