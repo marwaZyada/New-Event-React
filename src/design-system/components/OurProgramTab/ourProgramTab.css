@@ -1,0 +1,17 @@
+span{
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+span:hover:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: red;
+    width: 100%;
+    left: 0;
+    bottom: -18px;
+}
+.active{
+    color: red;
+}

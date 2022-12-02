@@ -1,0 +1,19 @@
+.register{
+    background-image: url(../../../assets/register-bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+.register input:not(input[type="submit"]){
+    background-color: transparent;
+    border:1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+}
+.register .btn{
+    border-radius: 25px!important;
+    padding:.1rem 2rem!important;
+    margin-left: 40%;
+}

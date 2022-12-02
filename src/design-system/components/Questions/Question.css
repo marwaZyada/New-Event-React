@@ -1,0 +1,6 @@
+.accordion-button::after,.accordion-button:not(.collapsed) {
+    background-image: none!important;
+}
+.accordion-button:not(.collapsed){
+    background-color: bisque!important;
+}
