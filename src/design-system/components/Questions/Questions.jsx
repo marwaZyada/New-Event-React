@@ -5,17 +5,24 @@ import {AiOutlineMinus} from 'react-icons/ai'
 import QuestionData from "./QustionData";
 
 const Questions = () => {
-  const[flag,setFlag]=useState(null)
+  const[active,setActive]=useState(null)
+  const[flag,setFlag]=useState(false)
+  
   const sign=useRef()
  
  
 const showEl=(i)=>{
-if(flag===i){
-return  setFlag(null)
+ 
+if(active===i){
+  setActive(null)
+setFlag(false)
  
 }
-setFlag(i)
+setActive(i)
+setFlag(!flag)
+
   console.log(i)
+  
 }
  
   
@@ -42,15 +49,15 @@ setFlag(i)
             >
              <div className="d-flex justify-content-between w-100 text-capitalize">   
             {el.ques}
-            {(flag===ind)? <AiOutlineMinus/>:<AiOutlinePlus />}
+            {(active===ind&&flag===true)? <AiOutlineMinus/>:<AiOutlinePlus />}
             
               </div>
             </button>
           </h2>
-          {flag===ind?
+          
           <div
-            id="collapseOne"
-            className="accordion-collapse collapse"
+           
+            className={(active===ind&&flag===true)?"show":"accordion-collapse collapse"}
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
            href={sign} 
@@ -58,7 +65,7 @@ setFlag(i)
             <div className="accordion-body">
              {el.body}
             </div>
-          </div>:""}
+          </div>
         </div>
         ))}
         
