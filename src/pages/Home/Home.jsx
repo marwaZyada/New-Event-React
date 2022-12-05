@@ -7,6 +7,7 @@ import AboutUs from "../../design-system/components/AboutUs";
 import WatchVideo from "../../design-system/components/WatchVideo";
 import Register from "../../design-system/components/Register";
 import Questions from "../../design-system/components/Questions";
+import Venue from "../../design-system/components/Venue";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <OurProgramSection />
       <Register/>
       <Questions/>
+      <Venue/>
       <OurSponserSection />
     </div>
   );

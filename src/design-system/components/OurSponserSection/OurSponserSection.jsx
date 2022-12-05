@@ -7,7 +7,7 @@ const OurSponserSection = () => {
         <div className="container">
         <div className='row py-5'>
             {OurSponserData.map(el=>(
-                <OurSponser img={el.img} alt={el.alt}/>
+                <OurSponser img={el.img} alt={el.alt} key={el.id}/>
             ))}
         </div>
         </div>

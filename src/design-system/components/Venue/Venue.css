@@ -1,0 +1,6 @@
+.venue{
+    background-image: url(../../../assets/venue-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
